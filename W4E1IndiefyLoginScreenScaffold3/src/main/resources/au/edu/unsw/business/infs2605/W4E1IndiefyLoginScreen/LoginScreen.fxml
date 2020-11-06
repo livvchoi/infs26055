@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="au.edu.unsw.business.infs2605.W4E1IndiefyLoginScreen.LoginScreenController">
+   <children>
+      <Pane layoutX="893.0" layoutY="-4.0" prefHeight="800.0" prefWidth="307.0" style="-fx-background-color: #FFE4C6;">
+         <children>
+            <HBox layoutX="54.0" layoutY="182.0" prefHeight="44.0" prefWidth="200.0" style="-fx-background-color: #4D76F6; -fx-background-radius: 5px;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="44.0" prefWidth="200.0" text="Login with Facebook" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox layoutX="54.0" layoutY="267.0" prefHeight="44.0" prefWidth="200.0" style="-fx-background-color: #F64600; -fx-background-radius: 5px;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="44.0" prefWidth="200.0" text="Login with Gmail" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox layoutX="54.0" layoutY="348.0" prefHeight="44.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5px;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="44.0" prefWidth="200.0" text="Login with Apple" />
+               </children>
+            </HBox>
+            <Label layoutX="238.0" layoutY="14.0" text="Need Help?" underline="true">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="usernameBox" layoutX="343.0" layoutY="197.0" prefHeight="27.0" prefWidth="221.0" promptText="Username" />
+      <Label layoutX="345.0" layoutY="318.0" text="Forgot your password?" underline="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="login" layoutX="535.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" onMouseClicked="#handleLoginButtonAction" style="-fx-background-color: #5D78BE;" text="LOGIN" textFill="WHITE" />
+      <Label fx:id="message" alignment="CENTER_RIGHT" layoutY="350.0" onMouseClicked="#handleLoginButtonAction" prefHeight="17.0" prefWidth="345.0" />
+      <PasswordField fx:id="passwordBox" layoutX="343.0" layoutY="251.0" prefHeight="27.0" prefWidth="221.0" promptText="Password" />
+      <HBox layoutX="232.0" layoutY="104.0" prefHeight="57.0" prefWidth="221.0">
+         <children>
+            <ImageView fitHeight="49.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Image/cloud.png" />
+               </image>
+            </ImageView>
+            <Label text="CJKO">
+               <font>
+                  <Font name="Andale Mono" size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
